@@ -30,7 +30,7 @@ General Style
 -------------------------------- */
 .cd-intro {
     position: relative;
-    height: 100vh;
+    height: 70%;
     width: 100%;
     /* vertically align its content */
     display: table;
