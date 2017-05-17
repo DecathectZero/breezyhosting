@@ -206,7 +206,7 @@ ul{
     position: relative;
     overflow: auto;
     padding: 50px 30px;
-    background: url(../img/bath.jpg) no-repeat center center fixed;
+    background: url(../img/tinybath.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -328,10 +328,13 @@ p a:hover, p a:focus {
     margin-bottom: 20px;
 }
 h2{
-    font-family: bebas;
-    text-align: center;
-    font-size: 48px;
+    font-weight: lighter;
+    /*text-align: center;*/
+    font-size: 36px;
     color: #000;
+}
+.dark h2{
+    color: #fff;
 }
 .right-text header h2{
     text-align: left;

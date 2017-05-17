@@ -34,7 +34,7 @@ General Style
     width: 100%;
     /* vertically align its content */
     display: table;
-    background: url(../img/home.jpg) no-repeat center center fixed;
+    background: url(../img/tinyhome.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
