@@ -757,20 +757,6 @@ h4{
     font-family: bebas;
     font-size: 32px;
 }
-.btn-primary{
-    border-color: #c3151c;
-    background: #c3151c;
-    -webkit-transition: 0.15s ease-in-out;
-    -moz-transition: 0.15s ease-in-out;
-    -o-transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in-out;
-    transition: 0.15s ease-in;
-}
-.btn-primary:hover, .btn-primary:focus{
-    border-color: #c3151c;
-    color: #c3151c;
-    background-color: #fff;
-}
 .btn-primary2{
     border-color: #fff;
     background: #c3151c;
@@ -838,6 +824,7 @@ td, th {
     float: left;
     border-radius: 0px;
     height: 50px;
+    font-weight: lighter;
 }
 .contactform textarea {
     display:block;
@@ -863,6 +850,20 @@ td, th {
 #contactform button:hover, #contactform button:focus{
     font-weight: lighter;
     background-color: #777;
+}
+.btn-primary{
+    border-color: #039BE5;
+    background: #039BE5;
+    -webkit-transition: 0.15s ease-in-out;
+    -moz-transition: 0.15s ease-in-out;
+    -o-transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in-out;
+    transition: 0.15s ease-in;
+}
+.btn-primary:hover, .btn-primary:focus{
+    border-color: #039BE5;
+    color: #039BE5;
+    background-color: #fff;
 }
 input, textarea{
     border: none;
