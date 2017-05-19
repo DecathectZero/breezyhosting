@@ -9,6 +9,7 @@ html, body{
     margin: 0;
     border: 0;
     padding: 0;
+    font-weight: lighter;
 }
 strong{
     font-size: 20px;
@@ -32,7 +33,7 @@ p{
     padding-top: 10px;
 }
 .headergap{
-    padding-top: 98px;
+    padding-top: 100px;
 }
 .tbox{
     height: 75px;
@@ -186,24 +187,29 @@ ul{
     font-weight: lighter;
 }
 
-.navbar .nav >li >a:focus,
-.navbar .nav >li >a:hover {
-    background-color:transparent;
-    color:#cc0800;
-    text-decoration:none;
-}
-.boxy{
-    margin-top: 24px;
-    padding: 10px 12px !important;
-    border: 2px solid #039BE5;
-}
-
 .navbar .nav >.active >a,
 .navbar .nav >.active >a:hover,
 .navbar .nav >.active >a:focus {
     cursor: default;
     color:#039BE5;
     text-decoration:none;
+}
+
+.navbar .nav >li >a:focus,
+.navbar .nav >li >a:hover {
+    background-color:transparent;
+    color:#0D47A1 !important;
+    text-decoration:none;
+}
+
+#boxy{
+    margin-top: 24px;
+    padding: 10px 12px !important;
+    border: 2px solid #039BE5;
+}
+#boxy:focus, #boxy:hover{
+    color: #fff !important;
+    background-color: #039BE5 !important;
 }
 
 .cover{
@@ -247,6 +253,7 @@ video {
 }
 #points h3{
     font-weight: lighter;
+    margin-top: 8px;
 }
 #points span{
     font-size: 64px;
@@ -323,7 +330,7 @@ p a:hover, p a:focus {
 }
 .row-fluid{
     border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .line{
     border-bottom: 1px solid #ddd;
@@ -390,10 +397,10 @@ h1{
     color: #000;
 }
 h4{
-    text-align: center;
-    font-family: bebas;
-    margin-top: -10px;
-    font-size: 32px;
+    margin-top: -5px;
+    font-size: 24px;
+    color: #aaa;
+    font-weight: lighter;
 }
 .sponsors{
     height: 40px;
@@ -816,6 +823,53 @@ td, th {
     border-bottom: 0;
     text-align: center;
 }
+.modal-content{
+    border-radius: 0px;
+}
+.modal-footer{
+    padding: 0px;
+}
+.btn-default{
+    background: #fff;
+}
+.modal-footer button{
+    width: 50%;
+    margin: 0px !important;
+    float: left;
+    border-radius: 0px;
+    height: 50px;
+}
+.contactform textarea {
+    display:block;
+    box-sizing: padding-box;
+    overflow:hidden;
+    font-size:16px;
+    border:0;
+    width: 100%;
+    resize: none;
+    box-shadow: none !important;
+    outline: none !important;
+}
+#contactform button{
+    font-weight: lighter;
+    background-color: #fff;
+    color: #333;
+    border-radius: 0px;
+    -webkit-transition: -webkit-box-shadow 0.2s linear,background-color 0.2s linear;
+    -moz-transition: -moz-box-shadow 0.2s linear,background-color 0.2s linear;
+    -o-transition: -o-box-shadow 0.2s linear,background-color 0.2s linear;
+    transition: box-shadow 0.2s linear,background-color 0.2s linear;
+}
+#contactform button:hover, #contactform button:focus{
+    font-weight: lighter;
+    background-color: #777;
+}
+input, textarea{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 5px;
+}
 @media only screen and (min-width: 1024px) {
     .cd-top {
         height: 60px;
@@ -826,6 +880,9 @@ td, th {
 }
 
 @media (max-width: 1056px) {
+    .headergap{
+        padding-top: 88px;
+    }
     #properties>div{
         padding-right: 15px;
     }
@@ -900,6 +957,9 @@ td, th {
 }
 
 @media (max-width: 767px){
+    #ctable{
+        margin-bottom: 20px;
+    }
     .backgroundcontainer {
         padding: 10px 0;
     }

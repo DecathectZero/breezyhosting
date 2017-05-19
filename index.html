@@ -99,12 +99,13 @@
                         <li class="active"><a href="test" style="cursor: pointer">Benefits</a></li>
                         <li class="active"><a href="test" style="cursor: pointer">Pricing</a></li>
                         <li class="active"><a href="test" style="cursor: pointer">Properties</a></li>
-                        <li class="active"><a href="test" class="boxy" style="cursor: pointer">Get Started</a></li>
+                        <li class="active"><a id="boxy" style="cursor: pointer">Get Started</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    <div class="headergap"></div>
     <section class="cd-intro">
         <div class="cd-intro-content mask">
             <h1 data-content="Renting your vacation home has never been this easy">
@@ -120,6 +121,10 @@
     <div class="backgroundcontainer">
         <div class = "container" style="background-color: #FFF">
             <div class="container">
+                <header class = "row-fluid">
+                    <h2>Advantage</h2>
+                    <h4>Additional Information goes here</h4>
+                </header>
                 <div class="row" id="points">
                     <div class="col-md-4 col-xs-12">
                         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
@@ -158,6 +163,7 @@
         <div class = "container" style="background-color: #FFF">
             <header class = "row-fluid">
                 <h2>Host <span class="reds">Benefits</span></h2>
+                <h4>Additional Information goes here</h4>
             </header>
             <div class="container">
                 <div class="row" id="benefits">
@@ -212,7 +218,7 @@
         <div class="container">
             <h2 class="margin-bottom">Comparisons</h2>
             <div class="row">
-                <div class="col-md-8 col-xs-12">
+                <div class="col-md-8 col-xs-12" id="ctable">
                     <section id="cd-table">
                         <header class="cd-table-column">
                             <h2>Features</h2>
@@ -296,15 +302,40 @@
         </div>
     </div>
     <a href="#0" class="cd-top">Top</a>
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="fullform" class="contactform">
+                        <input name="name" type="text" placeholder="Name*" required><br>
+                        <input name="email" type="email" placeholder="Email*" required><br>
+                        <input name="tel" type="tel" placeholder="Phone"><br>
+                        <textarea class="autoExpand" data-min-rows="2" placeholder="Additional Comments" name="comments" rows="2"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-3 col-xs-12">
-                    <div class="social-icons">
-                        <li class="facebook" style="background-color: transparent">
-                            <a href="https://www.facebook.com/CAIMUN2017/" target="_blank">Facebook</a>
-                        </li>
-                    </div>
+                <div class="col-md-6 col-xs-12">
+                    <form id="contactform" class="cform">
+                        <input name="name" type="text" placeholder="Name"><br>
+                        <input name="email" type="email" placeholder="Email"><br>
+                        <button type="submit" class="btn btn-lg">Contact Us</button>
+                    </form>
+                </div>
+                <div class="col-md-6 col-xs-12">
                 </div>
             </div>
         </div>
@@ -314,21 +345,11 @@
             <p class="content">Copyright © 2017 Breezy Hosting and Property Management inc.</p>
         </div>
     </div>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-46439393-4', 'auto');
-        ga('send', 'pageview');
-
-    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
