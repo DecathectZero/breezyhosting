@@ -826,6 +826,10 @@ td, th {
     height: 50px;
     font-weight: lighter;
 }
+#success{
+    font-size: 18px;
+    margin-top: 0px;
+}
 .contactform textarea {
     display:block;
     box-sizing: padding-box;
