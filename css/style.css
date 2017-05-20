@@ -503,6 +503,15 @@ h4{
     background: #c3151c;
 }
 
+.img{
+    max-width: 50%;
+    height: auto;
+}
+
+.add-bottom-margin-small{
+    margin-bottom: 5px;
+}
+
 .breezy{
     color: #039BE5;
 }
