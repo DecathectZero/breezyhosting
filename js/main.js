@@ -51,13 +51,16 @@ $( document ).ready(function() {
                 url      : 'http://breezyhosting.ca/php/contact.php',
                 data     : $('#fullform').serialize(),
                 success  : function(data) {
-                    alert(data);
-                    $("#fullform").slideUp(function(){
-                        $submit.html("Done");
-                        $submit.css('background-color','#0D47A1');
-                        $submit.css('border','none');
-                        $("#success").html("Thank you for your inquiry! We'll get back to you shortly.");
-                    });
+                    if(data == 200){
+                        $("#fullform").slideUp(function(){
+                            $submit.html("Done");
+                            $submit.css('background-color','#0D47A1');
+                            $submit.css('border','none');
+                            $("#success").html("Thank you for your inquiry! We'll get back to you shortly.");
+                        });
+                    }else{
+
+                    }
                 },
                 error: function(xhr, status, error) {
                     alert("Oops, something went wrong: "+ error);

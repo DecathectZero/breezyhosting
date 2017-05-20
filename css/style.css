@@ -138,6 +138,7 @@ span.red{
     margin-left: 5px;
 }
 span.blues{
+    font-weight: lighter;
     color: #039BE5;;
 }
 span.black{
@@ -511,9 +512,10 @@ h4{
 .add-bottom-margin-small{
     margin-bottom: 5px;
 }
-
-.breezy{
-    color: #039BE5;
+li.add-bottom-margin-small{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 #countdown{
@@ -809,6 +811,7 @@ table {
     width: 100%;
     max-width: 600px;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 td, th {
@@ -816,6 +819,20 @@ td, th {
     border: 1px solid #999;
     padding: 0.5rem;
     text-align: left;
+}
+th:first-of-type{
+    width: 40%;
+}
+.breezy, .compet{
+    text-align: right !important;
+}
+.compet{
+    width: 30%;
+    font-weight: normal;
+}
+.breezy{
+    color: #039BE5;
+    width: 30%;
 }
 .date{
     background-color: #c3151c;
