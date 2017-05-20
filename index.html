@@ -43,6 +43,7 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/intro.css">
@@ -117,7 +118,6 @@
                     </button>
                     <a class="brand" href="index.html">
                         <img src="img/Breezy%20Hosting_files/breezy.png" alt="Smiley face" class="img">
-                        <link href = "images/icon.gif" rel="icon" type="image/gif">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse">
@@ -125,7 +125,7 @@
                         <li class="active"><a href="#benefitscon" style="cursor: pointer">Benefits</a></li>
                         <li class="active"><a href="#pricecon" style="cursor: pointer">Pricing</a></li>
                         <li class="active"><a href="#propcon" style="cursor: pointer">Properties</a></li>
-                        <li class="active"><a id="boxy" style="cursor: pointer">Get Started</a></li>
+                        <li class="active"><a id="boxy" style="cursor: pointer" class="start">Get Started</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                 <span>Renting your vacation home has never been this easy</span></h1>
             <div class="action-wrapper">
                 <p>
-                    <a href="#0" class="cd-btn main-action">Get started</a>
+                    <a href="#0" class="cd-btn main-action start">Get started</a>
                     <!--<a href="#0" class="cd-btn">Learn More</a>-->
                 </p>
             </div>
@@ -182,8 +182,8 @@
         <div><h1 class="hometitle">We manage your vacation rental – you earn effortless income</h1></div>
 
         <p class="center titletext">We handle your bookings, guests, and everything in between.</p>
-        <p>
-            <a href="#0" class="cd-btn main-action">Receive Free Airbnb Property Valuation</a>
+        <p class="center">
+            <a href="" class="cd-btn main-action start">Receive Free Airbnb Property Valuation</a>
             <!--<a href="#0" class="cd-btn">Learn More</a>-->
         </p>
     </div>
@@ -246,7 +246,9 @@
     </div>
     <div class="backgroundcontainer" style="background-color: #eee" id="pricecon">
         <div class="container">
-            <h2 class="margin-bottom">Earn More the <span class="blues">Breezy</span> Way</h2>
+            <header class = "row-fluid">
+                <h2 class="margin-bottom">Earn More the <span class="blues">Breezy</span> Way</h2>
+            </header>
             <div class="row">
                 <div class="col-md-8 col-xs-12" id="ctable">
                     <table class="table table-striped">
@@ -374,17 +376,17 @@
                     <h4 class="modal-title" id="myModalLabel">Contact Us</h4>
                 </div>
                 <div class="modal-body">
-                    <form id="fullform" class="contactform">
-                        <input name="name" type="text" placeholder="Name*" required><br>
-                        <input name="email" type="email" placeholder="Email*" required><br>
-                        <input name="tel" type="tel" placeholder="Phone"><br>
-                        <textarea class="autoExpand" data-min-rows="5" placeholder="Additional details about your property" name="comments" rows="5"></textarea>
-                    </form>
                     <h4 id="success"></h4>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" id="sendcontact">Submit</button>
+                    <form id="fullform" class="contactform">
+                        <div class="padding">
+                            <input name="name" type="text" placeholder="Name*" required><br>
+                            <input name="email" type="email" placeholder="Email*" required><br>
+                            <input name="tel" type="tel" placeholder="Phone"><br>
+                            <textarea class="autoExpand" data-min-rows="5" placeholder="Additional details about your property" name="comments" rows="5"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary" id="sendcontact">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -119,10 +119,11 @@ h5{
 .navbar .brand {
     float: left;
     display: block;
-    padding: 10px 20px 10px;
+    padding: 0px 20px 5px 0px;
     margin-left: -10px;
     text-decoration: none;
     font-size: 28px;
+    width: 250px;
 }
 .navbar-fixed-top .navbar-inner {
     padding: 5px 0;
@@ -138,6 +139,7 @@ span.red{
     margin-left: 5px;
 }
 span.blues{
+    font-weight: lighter;
     color: #039BE5;;
 }
 span.black{
@@ -217,7 +219,7 @@ ul{
     border-top: none;
     position: relative;
     overflow: auto;
-    padding: 50px 30px;
+    padding: 70px 30px;
     background: url(../img/tinybath.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -504,16 +506,17 @@ h4{
 }
 
 .img{
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
 .add-bottom-margin-small{
     margin-bottom: 5px;
 }
-
-.breezy{
-    color: #039BE5;
+li.add-bottom-margin-small{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 }
 
 #countdown{
@@ -809,6 +812,7 @@ table {
     width: 100%;
     max-width: 600px;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 td, th {
@@ -816,6 +820,20 @@ td, th {
     border: 1px solid #999;
     padding: 0.5rem;
     text-align: left;
+}
+th:first-of-type{
+    width: 40%;
+}
+.breezy, .compet{
+    text-align: right !important;
+}
+.compet{
+    width: 30%;
+    font-weight: normal;
+}
+.breezy{
+    color: #039BE5;
+    width: 30%;
 }
 .date{
     background-color: #c3151c;
@@ -826,6 +844,7 @@ td, th {
 }
 .modal-content{
     border-radius: 0px;
+    overflow: auto;
 }
 .modal-footer{
     padding: 0px;
@@ -833,7 +852,16 @@ td, th {
 .btn-default{
     background: #fff;
 }
-.modal-footer button{
+.modal-body{
+    padding: 0px;
+}
+.padding{
+    padding: 15px;
+}
+#fullform .btn-default{
+    border: none;
+}
+#fullform button{
     width: 50%;
     margin: 0px !important;
     float: left;
@@ -902,6 +930,9 @@ input, textarea{
 @media (max-width: 1056px) {
     .headergap{
         padding-top: 88px;
+    }
+    .navbar .brand{
+        padding: 0px 0px 0px 20px;
     }
     #properties>div{
         padding-right: 15px;

@@ -14,7 +14,7 @@ $( document ).ready(function() {
         openModal();
     });
 
-    $( "#boxy" ).click(function( event ) {
+    $( ".start" ).click(function( event ) {
         event.preventDefault();
         openModal();
     });
@@ -34,35 +34,34 @@ $( document ).ready(function() {
             rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 22);
             this.rows = minRows + rows;
         })
-        .on('click', '#sendcontact', function (e) {
+        .on('submit', '#fullform', function (e) {
             e.preventDefault();
-            if($(this).html() == "Submit"){
-                $("#fullform").submit();
+            // alert($submit.html());
+            if($submit.html() == "Submit"){
+                $.ajax({
+                    type     : "POST",
+                    cache    : false,
+                    url      : 'php/contact.php',
+                    data     : $('#fullform').serialize(),
+                    success  : function(data) {
+                        if(data == 200){
+                            $("#fullform").slideUp(function(){
+                                $submit.html("Done");
+                                $submit.css('background-color','#0D47A1');
+                                $submit.css('border','none');
+                                $("#success").html("Thank you for your inquiry! We'll get back to you shortly.");
+                            });
+                        }else{
+                            alert("Oops, something went wrong: " + data);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        alert("Oops, something went wrong: "+ error);
+                    }
+                });
             }else{
                 $('#contactModal').modal('hide');
             }
-        })
-        .on('submit', '#fullform', function (e) {
-            e.preventDefault();
-            alert("yoloswag");
-            $.ajax({
-                type     : "POST",
-                cache    : false,
-                url      : 'http://breezyhosting.ca/php/contact.php',
-                data     : $('#fullform').serialize(),
-                success  : function(data) {
-                    alert(data);
-                    $("#fullform").slideUp(function(){
-                        $submit.html("Done");
-                        $submit.css('background-color','#0D47A1');
-                        $submit.css('border','none');
-                        $("#success").html("Thank you for your inquiry! We'll get back to you shortly.");
-                    });
-                },
-                error: function(xhr, status, error) {
-                    alert("Oops, something went wrong: "+ error);
-                }
-            });
         });
     // Select all links with hashes
     $('a[href*="#"]')
