@@ -119,10 +119,11 @@ h5{
 .navbar .brand {
     float: left;
     display: block;
-    padding: 10px 20px 10px;
+    padding: 0px 20px 5px 0px;
     margin-left: -10px;
     text-decoration: none;
     font-size: 28px;
+    width: 250px;
 }
 .navbar-fixed-top .navbar-inner {
     padding: 5px 0;
@@ -218,7 +219,7 @@ ul{
     border-top: none;
     position: relative;
     overflow: auto;
-    padding: 50px 30px;
+    padding: 70px 30px;
     background: url(../img/tinybath.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -505,7 +506,7 @@ h4{
 }
 
 .img{
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -843,6 +844,7 @@ th:first-of-type{
 }
 .modal-content{
     border-radius: 0px;
+    overflow: auto;
 }
 .modal-footer{
     padding: 0px;
@@ -850,7 +852,16 @@ th:first-of-type{
 .btn-default{
     background: #fff;
 }
-.modal-footer button{
+.modal-body{
+    padding: 0px;
+}
+.padding{
+    padding: 15px;
+}
+#fullform .btn-default{
+    border: none;
+}
+#fullform button{
     width: 50%;
     margin: 0px !important;
     float: left;
@@ -919,6 +930,9 @@ input, textarea{
 @media (max-width: 1056px) {
     .headergap{
         padding-top: 88px;
+    }
+    .navbar .brand{
+        padding: 0px 0px 0px 20px;
     }
     #properties>div{
         padding-right: 15px;
