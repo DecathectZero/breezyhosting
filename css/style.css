@@ -84,6 +84,9 @@ h5{
     width: 100%;
     background-color: #111;
 }
+.footer a{
+    font-size: 8px;
+}
 #bot{
     background-color: #222
 }
@@ -928,6 +931,9 @@ input, textarea{
 }
 
 @media (max-width: 1056px) {
+    #boxy{
+        margin-top: 0px;
+    }
     .headergap{
         padding-top: 88px;
     }
